@@ -1,0 +1,8 @@
+{
+  "name": "Al Huda Quran Academy",
+  "description": "Learn Holy Quran Online with Certified Male & Female Tutors. Flexible 1-on-1 Tajweed, Hifz, and Islamic Studies classes for kids and adults worldwide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

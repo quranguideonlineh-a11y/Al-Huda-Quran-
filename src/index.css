@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-arabic: 'Scheherazade New', 'Amiri', serif;
+    --font-quran: 'Amiri', serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #fcfbf7;
+    color: #172b20;
+    overflow-x: hidden;
+  }
+}
+
+.font-arabic {
+  font-family: 'Scheherazade New', 'Amiri', serif;
+}
+
+.font-quran {
+  font-family: 'Amiri', serif;
+}
+
+/* Subtle Islamic geometric star pattern for headers/accents */
+.islamic-pattern {
+  background-color: #064e3b;
+  background-image: radial-gradient(rgba(217, 119, 6, 0.18) 1px, transparent 1px),
+    radial-gradient(rgba(245, 158, 11, 0.12) 1px, #064e3b 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.islamic-subtle-pattern {
+  background-color: #faf9f5;
+  background-image: radial-gradient(#064e3b 0.6px, transparent 0.6px), radial-gradient(#047857 0.6px, #faf9f5 0.6px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+  background-opacity: 0.04;
+}
+
+/* Smooth modal transitions */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-modal {
+  animation: fadeInScale 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
